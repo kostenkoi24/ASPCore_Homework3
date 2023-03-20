@@ -1,0 +1,20 @@
+﻿@* Указание типа модели. Свойство Model текущего представления будет типа Data *@
+@model ASPCoreHomework3_5.Models.ProductModel;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>@Model.Id</p>
+    <p>@Model.Name</p>
+    <p>@Model.Price</p>
+    @* Строго типізоване відображення дозволяє створювати безпечні відображення, в яких звернення до моделі проходитиме перевірку компілятором.*@
+</body>
+</html>
